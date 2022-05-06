@@ -1,11 +1,11 @@
 
 let rollNumber      = prompt('Enter Roll Number From 1 to 10');
 
-let bn      = prompt('Bangla');
-let en      = prompt('EngLish');
-let math    = prompt('Math');
-let s       = prompt('Science');
-let h       = prompt('History');
+let bn      = prompt('Bangla Marks?');
+let en      = prompt('EngLish Marks?');
+let math    = prompt('Math Marks?');
+let s       = prompt('Science Marks?');
+let h       = prompt('History Marks?');
 
 let totalMarks = +bn + +en + +math + +s + +h;
 
@@ -15,8 +15,8 @@ studentInfo.forEach( (value, index) => {
     if(value.Roll === +rollNumber ){
         console.log(`
 
-        Name    :      ${studentInfo[index].Name}
         Roll    :      ${rollNumber}
+        Name    :      ${studentInfo[index].Name}
         Class   :      ${studentInfo[index].Class}
         Gender  :      ${studentInfo[index].Gender}
         Board   :      ${studentInfo[index].Board}
